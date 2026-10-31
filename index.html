@@ -53,7 +53,7 @@
                     <option value="6:00">6:00 p. m.</option>
                     <option value="8:00">8:00 p. m</option>
                 </select>
-                
+
             </article>
 
             <article class="canchas">
@@ -104,6 +104,24 @@
                 </select>
 
             </article>
+        </section>
+        <section id="ModuloReservas">
+            <h2>Reservas</h2>
+            <form id="reservas">
+                <label for="canchas">Selecciona una cancha:</label>
+                <select name="cancha" id="cancha">
+                    <option value="">Elija una cancha</option>
+                    <option value="1">Futbol 11 (cancha 1)</option>
+                    <option value="2">Futbol 5 (cancha 2)</option>
+                    <option value="3">Futbol Sala (cancha 3)</option>
+                </select>
+                <label for="Fecha">Fecha de la reserva</label>
+                <input type="date" id="fecha" name="fecha">
+                <label for="Fecha">Hora de la reserva</label>
+                <input type="time" id="hora" name="hora">
+                <button type="submit" id="reservasBtn">Reservar</button>
+            </form>
+
         </section>
     </main>
 
