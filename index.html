@@ -9,15 +9,16 @@
 
 <body>
 
-<header>
-<h1>AgendaFutbol</h1>
+    <header>
+        <h1>AgendaFutbol</h1>
 
-<nav>
-<a href="#inicio">Inicio</a>
-<a href="#canchas">Canchas</a>
-<a href="#ModuloReservas">Reservas</a>
-</nav>
-</header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#canchas">Canchas</a>
+            <a href="#ModuloReservas">Reservas</a>
+            <a href="#Contacto">Contacto</a>
+        </nav>
+    </header>
 
     <main>
         <section id="inicio">
@@ -26,7 +27,7 @@
             </h2>
             <p>
                 Encuentra la cancha ideal para tu próximo partido.
-                Consulta los horarios disponibles, conoce las opciones de juego 
+                Consulta los horarios disponibles, conoce las opciones de juego
                 y organiza tus encuentros deportivos de manera facil y rapida.
             </p>
 
@@ -106,29 +107,29 @@
             </article>
         </section>
         <section id="disponibilidad">
-<h2>Disponibilidad de Canchas</h2>
+            <h2>Disponibilidad de Canchas</h2>
 
-<p>Consulta los horarios disponibles para reservar tu cancha.</p>
+            <p>Consulta los horarios disponibles para reservar tu cancha.</p>
 
-<label for="canchaDisponibilidad">Selecciona una cancha:</label>
-<select id="canchaDisponibilidad">
-<option value="">Seleccione una cancha</option>
-<option value="1">Cancha 1 - Fútbol 11</option>
-<option value="2">Cancha 2 - Fútbol 5</option>
-<option value="3">Cancha 3 - Fútbol Sala</option>
-</select>
+            <label for="canchaDisponibilidad">Selecciona una cancha:</label>
+            <select id="canchaDisponibilidad">
+                <option value="">Seleccione una cancha</option>
+                <option value="1">Cancha 1 - Fútbol 11</option>
+                <option value="2">Cancha 2 - Fútbol 5</option>
+                <option value="3">Cancha 3 - Fútbol Sala</option>
+            </select>
 
-<label for="fechaDisponibilidad">Selecciona una fecha:</label>
-<input type="date" id="fechaDisponibilidad">
+            <label for="fechaDisponibilidad">Selecciona una fecha:</label>
+            <input type="date" id="fechaDisponibilidad">
 
-<button type="button" id="consultarDisponibilidad">
-Consultar disponibilidad
-</button>
+            <button type="button" id="consultarDisponibilidad">
+                Consultar disponibilidad
+            </button>
 
-<div id="resultadoDisponibilidad">
-<p>Selecciona una cancha y una fecha para consultar los horarios.</p>
-</div>
-</section>
+            <div id="resultadoDisponibilidad">
+                <p>Selecciona una cancha y una fecha para consultar los horarios.</p>
+            </div>
+        </section>
 
         <section id="ModuloReservas">
             <h2>Reservas</h2>
@@ -148,7 +149,35 @@ Consultar disponibilidad
             </form>
 
         </section>
+
+        <section id="contacto">
+
+            <h2>Formulario de contacto</h2>
+
+            <form id="formularioContacto">
+
+                <h1>Comuniquese con nosotros</h1>
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" placeholder="Escribe tu correo">
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" placeholder="Fecha">
+
+                <label for="comentario">Comentario:</label>
+                <input type="text" id="comentario" placeholder="Motivo de contacto">
+
+                <button type="submit">Enviar</button>
+
+            </form>
+
+            <p id="mensaje"></p>
+        </section>
     </main>
+
 
     <footer>
         <p>AgendaFutbol, 2026. Todos los derechos reservados.</p>
