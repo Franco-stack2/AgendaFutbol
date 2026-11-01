@@ -1,0 +1,77 @@
+/* Modulo 3 - Resultados y Administracion */
+
+#resultados {
+    padding: 30px;
+    background-color: #f5f1e8;
+}
+
+#resultados h2 {
+    text-align: center;
+    color: #17324d;
+}
+
+.resultado {
+    background-color: white;
+    border: 1px solid #8aa6c1;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.resultado h3 {
+    color: #17324d;
+}
+
+
+#administracion {
+    padding: 30px;
+    background-color: #dce8f2;
+}
+
+#administracion h2 {
+    text-align: center;
+    color: #17324d;
+}
+
+#administracion form {
+    background-color: #fffdf7;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#administracion label {
+    display: block;
+    margin-top: 10px;
+}
+
+#administracion input,
+#administracion select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#administracion button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#administracion button:hover {
+    background-color: #315b7d;
+}
+
+#mensajeResultado {
+    text-align: center;
+}
+
+#listaReservasAdmin {
+    background-color: #fffdf7;
+    padding: 15px;
+    margin-top: 15px;
+}

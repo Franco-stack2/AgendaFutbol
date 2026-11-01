@@ -4,20 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
     <script src="script.js" defer></script>
+
     <title>AgendaFutbol</title>
 </head>
 
 <body>
 
     <header>
-        <h1>AgendaFutbol</h1>
+        <h1>AgendaFutbol</h1>a
 
         <nav>
             <a href="#inicio">Inicio</a>
             <a href="#canchas">Canchas</a>
             <a href="#ModuloReservas">Reservas</a>
-            <a href="#Contacto">Contacto</a>
+            <a href="#resultados">Resultados</a>
+            <a href="#administracion">Administración</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
 
@@ -148,6 +154,86 @@
                 <input type="time" id="hora" name="hora">
                 <button type="submit" id="reservasBtn">Reservar</button>
             </form>
+
+        </section>
+        <section id="resultados">
+
+            <h2>Resultados de partidos</h2>
+
+            <p>
+                Consulta los resultados de partidos realizados anteriormente.
+            </p>
+
+            <div id="listaResultados">
+
+                <article class="resultado">
+                    <h3>Partido 1</h3>
+                    <p>Equipo Azul 3 - 2 Equipo Rojo</p>
+                    <p>Cancha 1</p>
+                    <p>Fecha: 15/10/2026</p>
+                </article>
+
+                <article class="resultado">
+                    <h3>Partido 2</h3>
+                    <p>Equipo Verde 1 - 1 Equipo Negro</p>
+                    <p>Cancha 2</p>
+                    <p>Fecha: 18/10/2026</p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <section id="administracion">
+
+            <h2>Administración</h2>
+
+            <p>
+                Desde esta sección se puede administrar la información de AgendaFutbol.
+            </p>
+
+            <h3>Registrar resultado</h3>
+
+            <form id="formResultado">
+
+                <label for="equipo1">Equipo 1:</label>
+                <input type="text" id="equipo1">
+
+                <label for="marcador1">Goles equipo 1:</label>
+                <input type="number" id="marcador1" min="0">
+
+                <label for="equipo2">Equipo 2:</label>
+                <input type="text" id="equipo2">
+
+                <label for="marcador2">Goles equipo 2:</label>
+                <input type="number" id="marcador2" min="0">
+
+                <label for="canchaResultado">Cancha:</label>
+                <select id="canchaResultado">
+                    <option value="">Seleccione una cancha</option>
+                    <option value="Cancha 1">Cancha 1</option>
+                    <option value="Cancha 2">Cancha 2</option>
+                    <option value="Cancha 3">Cancha 3</option>
+                </select>
+
+                <label for="fechaResultado">Fecha:</label>
+                <input type="date" id="fechaResultado">
+
+                <button type="submit">Registrar resultado</button>
+
+            </form>
+
+            <p id="mensajeResultado"></p>
+
+            <h3>Reservas realizadas</h3>
+
+            <button type="button" id="mostrarReservas">
+                Mostrar reservas
+            </button>
+
+            <div id="listaReservasAdmin">
+                <p>Presione el botón para consultar las reservas realizadas.</p>
+            </div>
 
         </section>
 
