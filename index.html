@@ -4,49 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>AgendaFutbol</title>
 </head>
 
 <body>
 
+  
     <header>
-        <h1>AgendaFutbol</h1>
+   <nav class="navbar">
 
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#canchas">Canchas</a>
-            <a href="#ModuloReservas">Reservas</a>
-            <a href="#Contacto">Contacto</a>
-        </nav>
+        <h2>AgendaFutbol</h2>
+
+        <div class="nav-links">
+
+            <a href="#">Inicio</a>
+
+            <a href="#">Canchas</a>
+
+            <a href="#">Reservas</a>
+   
+            <a href="#">Contacto</a>
+
+      
+        </div>
+
+    </nav>
     </header>
-
     <main>
-        <section id="inicio">
+
+        <section class="bienvenida">
+
+            
             <h2>
-                Bienvenido(a) a AgendaFutbol
+                Bienvenido a AgendaFutbol
             </h2>
             <p>
                 Encuentra la cancha ideal para tu próximo partido.
                 Consulta los horarios disponibles, conoce las opciones de juego
                 y organiza tus encuentros deportivos de manera facil y rapida.
             </p>
+        </section>
 
-            <article class="canchas" id="canchas">
+        <div class="canchas">
+
+            <article class="cancha"> 
                 <h3>Cancha 1</h3>
-                <div style="text-align: center;">
+          
                     <img src="img/cancha.jpg">
-                </div>
+               
                 <p>
                     Tipo: Futbol 11
                     Superficie: Césped sintético
                     Capacidad: 11 jugadores por equipo
                 </p>
 
+             
                 <h3>Horarios Disponibles</h3>
                 <label for="horarioCancha1">Selecciona un horario:</label>
 
-                <select id="horarioCancha1" name="horarioCancha1">
+                <select class="horarioCancha" name="horarioCancha1">
                     <option value="">Seleccionar horario</option>
                     <option value="08:00">8:00 a. m.</option>
                     <option value="10:00">10:00 a. m.</option>
@@ -55,14 +73,14 @@
                     <option value="6:00">6:00 p. m.</option>
                     <option value="8:00">8:00 p. m</option>
                 </select>
+           
 
             </article>
 
-            <article class="canchas">
+            <article class="cancha">
                 <h3>Cancha 2</h3>
-                <div style="text-align: center;">
                     <img src="img/Fut5.webp">
-                </div>
+              
                 <p>
                     Tipo: Futbol 5
                     Superficie: Césped sintético
@@ -72,7 +90,7 @@
                 <h3>Horarios Disponibles</h3>
                 <label for="horarioCancha1">Selecciona un horario:</label>
 
-                <select id="horarioCancha1" name="horarioCancha1">
+                <select class="horarioCancha" name="horarioCancha1">
                     <option value="">Seleccionar horario</option>
                     <option value="08:00">8:00 a. m.</option>
                     <option value="12:00">12:00 m. d.</option>
@@ -83,11 +101,10 @@
 
             </article>
 
-            <article class="canchas">
+            <article class="cancha">
                 <h3>Cancha 3</h3>
-                <div style="text-align: center;">
                     <img src="img/futsala.jpg">
-                </div>
+              
                 <p>
                     Tipo: FutbolSala
                     Superficie: Césped concreto
@@ -97,7 +114,7 @@
                 <h3>Horarios Disponibles</h3>
                 <label for="horarioCancha1">Selecciona un horario:</label>
 
-                <select id="horarioCancha1" name="horarioCancha1">
+                <select class="horarioCancha" name="horarioCancha1">
                     <option value="">Seleccionar horario</option>
                     <option value="09:00">9:00 a. m.</option>
                     <option value="2:00">2:00 p. m.</option>
@@ -106,7 +123,9 @@
                 </select>
 
             </article>
-        </section>
+       
+    </div>
+
         <section id="disponibilidad">
             <h2>Disponibilidad de Canchas</h2>
 
@@ -132,6 +151,7 @@
             </div>
         </section>
 
+        
         <section id="ModuloReservas">
             <h2>Reservas</h2>
             <form id="reservas">
@@ -158,16 +178,16 @@
                 <h2>Comuniquese con nosotros</h2>
 
                 <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" placeholder="Escribe tu nombre">
+                <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
 
                 <label for="correo">Correo electrónico:</label>
-                <input type="email" id="correo" placeholder="Escribe tu correo">
+                <input type="email" id="correo" placeholder="Escribe tu correo" required>
 
                 <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" placeholder="Fecha">
+                <input type="date" id="fecha" placeholder="Fecha" required>
 
                 <label for="comentario">Comentario:</label>
-                <input type="text" id="comentario" placeholder="Motivo de contacto">
+                <input type="text" id="comentario" placeholder="Motivo de contacto" required>
 
                 <button type="submit">Enviar</button>
 

@@ -1,0 +1,176 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body{
+    margin: 0;
+    font-family: Arial, sans-serif; /* Estas fuentes se van a usar en toodo el body */
+    background-color: rgb(235, 235, 235);
+    color: #333;
+}
+
+.navbar{
+
+    background-color: rgb(26, 25, 24);
+    padding: 20px 40px;
+    display: flex;
+      
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+   
+    height: 80px;
+
+
+}
+
+.navbar a{
+
+    text-decoration: none;
+
+
+}
+
+
+
+.navbar h2{
+
+    margin: 0;
+    color:rgb(3, 147, 214);
+    font-family: 'Gill Sans';
+
+}
+
+.nav-links{
+   display:flex;
+   gap: 25px;
+
+}
+
+.nav-links a{
+
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+
+
+
+}
+
+.nav-links a:hover {
+
+color: blue
+
+
+}
+
+
+.bienvenida{
+
+
+    text-align: center;
+    max-width: 700px;
+    margin: 40px auto;
+    line-height: 1.6;
+
+
+}
+
+.canchas {
+
+ display: flex;
+  flex-direction: row; /* artículos en fila */
+  flex-wrap: wrap;
+  gap: 160px;
+  justify-content: center;
+  margin-bottom: 120px;
+
+}
+
+.cancha  {
+  
+
+       display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 2);
+    border: 1px solid #d0d7de;
+    padding: 20px 20px;
+    max-width: 1100px;
+    margin: 4px;
+    
+ gap: 15px;
+
+ width: 450px; 
+  
+}
+
+.cancha  img {
+     width: 100%;
+    height: 200px;
+    object-fit: cover;
+    flex-wrap: wrap;
+
+}
+
+
+.horarioCancha {
+
+     background-color: rgb(58, 58, 173);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size:16px;
+    
+    
+}
+
+
+
+
+
+
+
+
+
+footer {
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: #222;
+
+    color: white;
+}
+
+/* que sea responsive */
+
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 20px;
+
+        text-align: center;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+}
