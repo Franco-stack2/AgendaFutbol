@@ -53,7 +53,7 @@
             <article class="cancha"> 
                 <h3>Cancha 1</h3>
           
-                    <img src="img/cancha.jpg">
+                    <img src="img/cancha.jpg" >
                
                 <p>
                     Tipo: Futbol 11
@@ -65,7 +65,7 @@
                 <h3>Horarios Disponibles</h3>
                 <label for="horarioCancha1">Selecciona un horario:</label>
 
-                <select class="horarioCancha" name="horarioCancha1">
+                <select class="horarioCancha" id="horarioCancha1" name="horarioCancha1">
                     <option value="">Seleccionar horario</option>
                     <option value="08:00">8:00 a. m.</option>
                     <option value="10:00">10:00 a. m.</option>
@@ -89,9 +89,9 @@
                 </p>
 
                 <h3>Horarios Disponibles</h3>
-                <label for="horarioCancha1">Selecciona un horario:</label>
+                <label for="horarioCancha2">Selecciona un horario:</label>
 
-                <select class="horarioCancha" name="horarioCancha1">
+                <select class="horarioCancha" id="horarioCancha2" name="horarioCancha2">
                     <option value="">Seleccionar horario</option>
                     <option value="08:00">8:00 a. m.</option>
                     <option value="12:00">12:00 m. d.</option>
@@ -104,7 +104,7 @@
 
             <article class="cancha">
                 <h3>Cancha 3</h3>
-                    <img src="img/futsala.jpg">
+                    <img src="img/futsala.jpg" >
               
                 <p>
                     Tipo: FutbolSala
@@ -113,9 +113,9 @@
                 </p>
 
                 <h3>Horarios Disponibles</h3>
-                <label for="horarioCancha1">Selecciona un horario:</label>
+                <label for="horarioCancha3">Selecciona un horario:</label>
 
-                <select class="horarioCancha" name="horarioCancha1">
+                <select class="horarioCancha" id="horarioCancha3" name="horarioCancha3">
                     <option value="">Seleccionar horario</option>
                     <option value="09:00">9:00 a. m.</option>
                     <option value="2:00">2:00 p. m.</option>
@@ -157,14 +157,14 @@
         <section id="ModuloReservas">
             <h2>Reservas</h2>
             <form class="reservas">
-                <label for="canchas">Selecciona una cancha:</label>
+                <label for="cancha">Selecciona una cancha:</label>
                 <select name="cancha" id="cancha">
                     <option value="">Elija una cancha</option>
                     <option value="1">Futbol 11 (cancha 1)</option>
                     <option value="2">Futbol 5 (cancha 2)</option>
                     <option value="3">Futbol Sala (cancha 3)</option>
                 </select>
-                <label for="Fecha">Fecha de la reserva</label>
+                <label for="fecha">Fecha de la reserva</label>
                 <input type="date" id="fecha" name="fecha">
                 <label for="hora">Hora de la reserva</label>
                 <input type="time" id="hora" name="hora">
@@ -277,8 +277,8 @@
                 <label for="correo">Correo electrónico:</label>
                 <input type="email" id="correo" placeholder="Escribe tu correo" required>
 
-                <label for="fecha">Fecha:</label>
-                <input type="date" id="fecha" placeholder="Fecha" required>
+                <label for="fechaContacto">Fecha:</label>
+                <input type="date" id="fechaContacto" placeholder="Fecha" required>
 
                 <label for="comentario">Comentario:</label>
                 <input type="text" id="comentario" placeholder="Motivo de contacto" required>
