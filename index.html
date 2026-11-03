@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
+
     <title>AgendaFutbol</title>
 </head>
 
@@ -126,35 +127,36 @@
        
     </div>
 
-        <section id="disponibilidad">
-            <h2>Disponibilidad de Canchas</h2>
+    <div class="disponibilidadReservas">
+        <section class="bloqueDisponibilidad">
+            <div class="reserva">
+            <h2>Disponibilidad</h2>
 
-            <p>Consulta los horarios disponibles para reservar tu cancha.</p>
+     
 
-            <label for="canchaDisponibilidad">Selecciona una cancha:</label>
-            <select id="canchaDisponibilidad">
-                <option value="">Seleccione una cancha</option>
-                <option value="1">Cancha 1 - Fútbol 11</option>
-                <option value="2">Cancha 2 - Fútbol 5</option>
-                <option value="3">Cancha 3 - Fútbol Sala</option>
-            </select>
-
-            <label for="fechaDisponibilidad">Selecciona una fecha:</label>
-            <input type="date" id="fechaDisponibilidad">
-
-            <button type="button" id="consultarDisponibilidad">
-                Consultar disponibilidad
-            </button>
-
-            <div id="resultadoDisponibilidad">
-                <p>Selecciona una cancha y una fecha para consultar los horarios.</p>
             </div>
+
+            <section class="disponibilidad">
+                <label for="canchaDisponibilidad">Selecciona una cancha:</label>
+                <select id="canchaDisponibilidad">
+                    <option value="">Seleccione una cancha</option>
+                    <option value="1">Cancha 1 - Fútbol 11</option>
+                    <option value="2">Cancha 2 - Fútbol 5</option>
+                    <option value="3">Cancha 3 - Fútbol Sala</option>
+                </select>
+
+                <label for="fechaDisponibilidad">Selecciona una fecha:</label>
+                <input type="date" id="fechaDisponibilidad">
+
+                <button type="button" id="consultarDisponibilidad">
+                    Consultar disponibilidad
+                </button>
+            </section>
         </section>
 
-        
         <section id="ModuloReservas">
             <h2>Reservas</h2>
-            <form id="reservas">
+            <form class="reservas">
                 <label for="canchas">Selecciona una cancha:</label>
                 <select name="cancha" id="cancha">
                     <option value="">Elija una cancha</option>
@@ -171,11 +173,103 @@
 
         </section>
 
+        </div>
+     
+        <section id="administracion">
+
+            <div id="titulo1">
+            <h2>Administración</h2>
+              <p>
+                Desde esta sección se puede administrar la información de AgendaFutbol.
+            </p>
+             </div>
+
+            <div id="titulo2">
+        
+              
+            <h3>Registrar resultado</h3>
+        </div>
+
+            <form id="formResultado">
+
+                <label for="equipo1">Equipo 1:</label>
+                <input type="text" id="equipo1">
+
+                <label for="marcador1">Goles equipo 1:</label>
+                <input type="number" id="marcador1" min="0">
+
+                <label for="equipo2">Equipo 2:</label>
+                <input type="text" id="equipo2">
+
+                <label for="marcador2">Goles equipo 2:</label>
+                <input type="number" id="marcador2" min="0">
+
+                <label for="canchaResultado">Cancha:</label>
+                <select id="canchaResultado">
+                    <option value="">Seleccione una cancha</option>
+                    <option value="Cancha 1">Cancha 1</option>
+                    <option value="Cancha 2">Cancha 2</option>
+                    <option value="Cancha 3">Cancha 3</option>
+                </select>
+
+                <label for="fechaResultado">Fecha:</label>
+                <input type="date" id="fechaResultado">
+
+                <button type="submit">Registrar resultado</button>
+
+            </form>
+
+            <p id="mensajeResultado"></p>
+
+               <section id="resultados">
+
+            <h2>Resultados de partidos</h2>
+
+            <p>
+                Consulta los resultados de partidos realizados anteriormente.
+            </p>
+
+            <div id="listaResultados">
+
+                <article class="resultado">
+                    <h3>Partido </h3>
+                    <p>Equipo Azul 3 - 2 Equipo Rojo</p>
+                    <p>Cancha 1</p>
+                    <p>Fecha: 15/10/2026</p>
+                </article>
+
+                <article class="resultado">
+                    <h3>Partido </h3>
+                    <p>Equipo Verde 1 - 1 Equipo Negro</p>
+                    <p>Cancha 2</p>
+                    <p>Fecha: 18/10/2026</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <div id="reservasAdmin">
+            <h3>Reservas realizadas</h3>
+        </div>
+            <button type="button" id="mostrarReservas">
+                Mostrar reservas
+            </button>
+
+            <div id="listaReservasAdmin">
+                <p>Presione el botón para consultar las reservas realizadas.</p>
+            </div>
+
+        </section>
+
         <section id="contacto">
 
-            <form id="formularioContacto">
+              <h2>Comuniquese con nosotros</h2>
 
-                <h2>Comuniquese con nosotros</h2>
+            <form class="formularioContacto">
+
+              
 
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" placeholder="Escribe tu nombre" required>

@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -87,7 +88,7 @@ color: blue
   flex-wrap: wrap;
   gap: 160px;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 70px;
 
 }
 
@@ -134,11 +135,267 @@ color: blue
     
 }
 
+.disponibilidadReservas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 120px;
+   
+}
+
+.bloqueDisponibilidad,
+#ModuloReservas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 400px;
+    max-width: 400px;
+}
+
+.reserva,
+#ModuloReservas h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 75px;
+    align-self: stretch;
+    max-width: 400px;
+    margin: 0 0 15px;
+    padding: 8px;
+}
+
+.disponibilidad {
+    display: flex;
+    flex-direction: column;
+    background-color: #fffdf7;
+    padding: 20px;
+    align-self: stretch;
+    min-height: 301px;
+    margin: 0;
+    border-radius: 8px;
+}
+
+.disponibilidad label {
+  display: block;
+    margin-top: 10px;
+
+}
+
+
+.disponibilidad input,
+.disponibilidad select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+
+.disponibilidad button,
+.reservas button {
+    width: 100%;
+}
+
+.disponibilidad button {
+    margin-top: auto;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.disponibilidad button:hover {
+    background-color: #315b7d;
+}
+
+
+.reservas{
+    background-color: #fffdf7;
+    padding: 20px;
+    align-self: stretch;
+    min-height: 301px;
+    margin: 0;
+    border-radius: 8px;
+
+}
+
+.reservas label {
+  display: block;
+    margin-top: 10px;
+
+}
+
+
+.reservas input,
+.reservas select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+
+.reservas button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.reservas button:hover {
+    background-color: #315b7d;
+}
+
+
+
+/* Modulo 3 - Resultados y Administracion */
+
+#resultados {
+    padding: 30px;
+  
+}
+
+#resultados h2 {
+    text-align: center;
+    color: #17324d;
+}
+
+.resultado {
+    background-color: white;
+  
+    margin: 15px;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.resultado h3 {
+    color: #17324d;
+}
+
+
+#administracion {
+    padding: 30px;
+  
+}
+
+#titulo1 {
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+}
+
+#titulo2 {
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+}
+
+#administracion h2 {
+    text-align: center;
+    color: #17324d;
+}
+
+#administracion form {
+    background-color: #fffdf7;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+#administracion label {
+    display: block;
+    margin-top: 10px;
+}
+
+#administracion input,
+#administracion select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+#administracion button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#administracion button:hover {
+    background-color: #315b7d;
+}
+
+#mensajeResultado {
+    text-align: center;
+}
 
 
 
 
+#listaReservasAdmin {
+      background-color: white;
+  
+    margin: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 15px;
+    border-radius: 8px;
+}
 
+#reservasAdmin{
+    text-align: center;
+}
+
+#contacto h2 {
+    text-align: center;
+    color: #17324d;
+}
+
+
+.formularioContacto{
+ background-color: #fffdf7;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    border-radius: 8px;
+
+}
+
+.formularioContacto label {
+  display: block;
+    margin-top: 10px;
+
+}
+
+
+.formularioContacto input,
+.formularioContacto select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+
+.formularioContacto button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #17324d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.formularioContacto button:hover {
+    background-color: #315b7d;
+}
 
 
 
@@ -172,5 +429,4 @@ footer {
     .producto {
         width: 100%;
     }
-
 }
